@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sena yıldız web sitesi</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .hidden { display: none; }
+    </style>
+    <script>
+        function showSection(section) {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(sec => {
+                sec.classList.add('hidden');
+            });
+            document.getElementById(section).classList.remove('hidden');
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="#">MADE BY SENA YILDIZ</a>
+            </div>
+            <ul>
+                <li><a href="index.html"  class="active" onclick="showSection('main page')">Main page</a></li>
+                <li><a href="hakkımda.html" onclick="showSection('About myself')">About myself</a></li>
+                <li><a href="projelerim.html" onclick="showSection('Projects')">Projects</a></li>
+                <li><a href="anket.html" onclick="showSection('Survey')">Survey</a></li>
+                <li><a href="iletişim.html" onclick="showSection('Contact')">Contact</a></li>
+            </ul>
+
+                </div>
+                    <div id="main-page" class="section hidden">Main Page Content</div>
+                    <div id="about-myself" class="section hidden">About Myself Content</div>
+                    <div id="projects" class="section hidden">Projects Content</div>
+                    <div id="survey" class="section hidden">Survey Content</div>
+                    <div id="contact" class="section hidden">Contact Content</div>
+                    
+        <div class="center" id="contact">
+            <h3>iletişim bilgileri</h3>
+            <h4>gmail:yldz39320@gmail.com</h4> 
+            <h5>Tel no:05317047507</h5>
+        </div>
+    </div>  
+</body>
+</html>
