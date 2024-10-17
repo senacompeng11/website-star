@@ -48,6 +48,17 @@
                 <button>click</button>
             </div>
         </div>
+        <div id="popup">Hoş Geldiniz!</div>
     </div>
+       <script>
+        window.onload = function() {
+            const popup = document.getElementById('popup');
+            popup.style.display = 'block';
+    
+            setTimeout(function() {
+                popup.style.display = 'none';
+            }, 5000); 
+        };
+    </script>
 </body>
 </html>
