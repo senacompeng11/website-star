@@ -161,4 +161,14 @@
   margin-top:60px;
   text-align: center;
 }
-
+#popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 100px;
+  background-color: #6d678b;
+  color: rgb(2, 2, 2);
+  border-radius: 50px;
+  z-index: 1000;
